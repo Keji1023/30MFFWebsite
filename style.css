@@ -49,14 +49,12 @@ a:hover{
   font-size: 20px;
   font-weight: bold;
   height: 50px;
-  /*width:100%*/
 }
 
 /*Styling the navigation logo*/
 #navigation img{
   width: 50px;
   height: 50px;
-  margin-top: 2px;
   margin-left: 10px;
 }
 
@@ -66,7 +64,7 @@ a:hover{
   padding: 20px 10px;
 }
 
-/*Fitting the poster to the home and watch page*/
+/*Fitting the poster to the home page*/
 .poster img{
   top: 50px;
   height: 500px;
@@ -189,22 +187,10 @@ margin: 20px;
   background-color: #717171;
 }
 
-/*Fading animation*
-.fade{
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+/*Styling the watch page*/
+.watch iframe{
+  object-fit: fill;
 }
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/
 
 /*Styling the connect page background*/
 #invitation{
