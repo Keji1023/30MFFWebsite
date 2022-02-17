@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html{
+  font-size: 16px;
+  font-family: "Raleway", monospace;
+}
+
+body, h1, h2, h3, h4, h5,h6 {
+  margin: 0;
+}
+
+body{
+  text-align: center;
+  background-color: white;
+}
+
+/*Removing default list settings*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Removing default link settings*/
+a{
+  text-decoration: none;
+  color: #e7e6e3;
+}
+
+/*Links on mouseover*/
+a:hover{
+  /*color: #e7e6e3;*/
+  color: coral;
+}
+
+/* Naviation bar links on mouse-over */
+#navigation a:hover {
+  background-color: #0a6883;
+  padding: 15px;
+}
+
+/* Styling the navigation bar */
+#navigation{
+  background-color: #25274D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  /*width:100%*/
+}
+
+/*Styling the navigation logo*/
+#navigation img{
+  width: 50px;
+  height: 50px;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+/*Styling the navigation links*/
+.navlinks ul li{
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/*Fitting the poster to the home and watch page*/
+.poster img{
+  top: 50px;
+  height: 500px;
+  object-fit:scale-down;
+}
+
+/*Styling the header for the about page*/
+#header{
+  background-image: url("images/about_banner.png");
+  background-position: center;
+  position: relative;
+  display: flex;
+  height: 200px;
+  color: white;
+  font-size: 25px;
+  justify-content:center;
+}
+
+#header h1{
+margin: 20px;
+  padding: 30px;
+}
+
+/*Styling the main elements of the about page*/
+#main {
+  display: inline-block;
+  text-align: center;
+}
+
+/*Styling the major headings of the about page*/
+.sub h3{
+  font-size: 2rem;
+  color: coral;
+}
+
+/*Styling sections for Photo Carusel*/
+
+* {
+  box-sizing: border-box;
+}
+
+.photo-carousel{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/*Hiding images by default*/
+.section{
+  display: none;
+}
+
+.section img{
+  width: 100%;
+}
+
+/*Styling next and previous buttons*/
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.4s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*Positioning next button*/
+.next{
+  right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*Buttons on mouseover*/
+.prev:hover, .next:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/*Captions*/
+.desc{
+  color: coral;
+  font-size: .75rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+
+/*Styling pavillion names*/
+.pavillion-name{
+  color: coral;
+  font-size: rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*Styling the tally circles*/
+.bubble{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+  border-radius: 50%;
+}
+
+#circles{
+  text-align: center;
+}
+
+.active, .bubble:hover{
+  background-color: #717171;
+}
+
+/*Fading animation*
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}*/
+
+/*Styling the connect page background*/
+#invitation{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 150, 0.5), rgba(0, 0, 50, 0.5)), url("images/connect_background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*Styling the connect page contact form*/
+.form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+.form-control{
+  width: 600px;
+  background:transparent;
+  outline: none;
+  border-bottom: 1px gray;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input{
+  height: 45px;
+}
+
+.form-submit{
+  background: #ff5722;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.form-submit:hover{
+  background-color: #f44336;
+}
+
+/*Styling the footer*/
+#footer{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: lightslategray;
+  bottom:0;
+  width: 100%;
+  filter: drop-shadow(2px 2px 4px #888888;
+}

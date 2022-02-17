@@ -3,59 +3,100 @@
   <head>
     <meta charset="utf-8">
     <title>EXPO-RIENCE</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
   </head>
 
   <body>
     <div id="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <img src="expo2020.jpg" alt="Expo-rience Logo">
-        <li><a href="watch_page1.html">Watch</a></li>
-        <!--<li><a href="watch_page2.html">Watch</a></li>-->
-        <li><a href="connect.html">Connect</a></li>
-      </ul>
+      <img src="images/expo2020.png" alt="Expo-Rience Logo">
+      <div class="navlinks">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="watch_page1.html">WATCH</a></li>
+          <!--<li><a href="watch_page2.html">Watch</a></li>-->
+          <li><a href="connect.html">CONNECT</a></li>
+        </ul>
+      </div>
     </div>
 
     <div id="header">
-      <img src="images/about_banner.jpg" alt="about page header background">
-      <img width="200" height="200" src="images/about_headshot.jpg" alt="about page header image">
       <h1>Experience Expo 2020 Through Our Eyes</h1>
     </div>
 
-    <div id="main1">
-      <h3>Our Story</h3>
-      <p>30MFF & THE IDEA BEHIND THE FILM</p>
+    <div id="main">
+      <div id="one" class="sub">
+        <h3>Our Story</h3>
+        <p>30MFF & THE IDEA BEHIND THE FILM. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div id="two" class= "sub">
+        <!--Photo Carousel-->
+        <h3>Featured Pavilions</h3>
+
+        <!--Images with name and caption-->
+        <div class="photo-carousel">
+          <div class="section">
+            <div class="Pavillion-Name"> Morocco</div>
+            <img src="images/morocco.jpg" alt="Morocco Pavilion">
+            <div class="desc">
+            <p>A kingdom of inspiration</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="Pavillion-Name"> Saudi Arabia</div>
+            <img src="images/saudi_arabia.jpg" alt="Saudi Arabia Pavilion">
+            <div class="desc">
+              <p>Reflection of the Kingdom’s past, present and shared future</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="Pavillion-Name"> Belgium</div>
+            <img src="images/belgium.jpg" alt="Belgium Pavilion">
+            <div class="desc">
+              <p>Diversity in Harmony</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="Pavillion-Name"> Singapore</div>
+            <img src="images/singapore.jpg" alt="Singapore Pavilion">
+            <div class="desc">
+              <p>It is hard to tell where nature begins and architecture ends</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="Pavillion-Name"> Japan</div>
+            <img src="images/japan.jpg" alt="Japan Pavilion">
+            <div class="desc">
+              <p>Bringing together technology, people and ideas</p>
+            </div>
+          </div>
+
+          <!--Next and Previous Buttons-->
+          <a class="prev" onclick="SlideAction(-1)">&#10094;</a>
+          <a class="next" onclick="SlideAction(1)">&#10095;</a>
+        </div>
+        <br>
+
+      </div>
     </div>
 
-    <div id="main2">
-      <h3>Featured Pavilions</h3>
-      <div id="Morocco-Pavilion">
-        <img width="100" height="100" src="images/morocco.jpg" alt="Morocco Pavilion">
-        <p>A kingdom of inspiration</p>
-      </div>
-
-      <div id="SaudiArabia-Pavilion">
-        <img width="100" height="100" src="images/saudi_arabia.jpg" alt="Saudi Arabia Pavilion">
-        <p>Reflection of the Kingdom’s past, present and shared future</p>
-      </div>
-
-      <div id="Belgium-Pavilion">
-        <img width="100" height="100" src="images/belgium.jpg" alt="Belgium Pavilion">
-        <p>Diversity in Harmony</p>
-      </div>
-
-      <div id="Singapore-Pavilion">
-        <img width="100" height="100" src="images/singapore.jpg" alt="Singapore Pavilion">
-        <p>It is hard to tell where nature begins and architecture ends</p>
-      </div>
-
-      <div id="Japan-Pavilion">
-        <img width="100" height="100" src="images/japan.jpg" alt="Japan Pavilion">
-        <p>Bringing together technology, people and ideas</p>
-      </div>
+    <!--Tally Circles-->
+    <div id="circles">
+      <span class="bubble" onclick="currentImage(1)"></span>
+      <span class="bubble" onclick="currentImage(2)"></span>
+      <span class="bubble" onclick="currentImage(3)"></span>
+      <span class="bubble" onclick="currentImage(4)"></span>
+      <span class="bubble" onclick="currentImage(5)"></span>
     </div>
 
+    <!--Footer-->
     <div id="footer">
       <div>
         Expo-Rience
