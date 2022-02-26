@@ -35,66 +35,69 @@
       <div id="two" class= "sub">
         <!--Photo Carousel-->
         <h3>Featured Pavilions</h3>
-
         <!--Images with name and caption-->
-        <div class="photo-carousel">
-          <div class="section">
-            <div class="Pavillion-Name"> Morocco</div>
-            <img src="images/morocco.jpg" alt="Morocco Pavilion">
-            <div class="desc">
-            <p>A kingdom of inspiration</p>
+        <div class="photo-carousel-container">
+          <div class="carousel">
+            <div class="section main1">
+              <div class="Pavillion-Name"> Morocco</div>
+              <img src="images/morocco.jpg" alt="Morocco Pavilion">
+              <div class="desc">
+              <p>A kingdom of inspiration</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="Pavillion-Name"> Saudi Arabia</div>
+              <img src="images/saudi_arabia.jpg" alt="Saudi Arabia Pavilion">
+              <div class="desc">
+                <p>Reflection of the Kingdom’s past, present and shared future</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="Pavillion-Name"> Belgium</div>
+              <img src="images/belgium.jpg" alt="Belgium Pavilion">
+              <div class="desc">
+                <p>Diversity in Harmony</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="Pavillion-Name"> Singapore</div>
+              <img src="images/singapore.jpg" alt="Singapore Pavilion">
+              <div class="desc">
+                <p>It is hard to tell where nature begins and architecture ends</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="Pavillion-Name"> Japan</div>
+              <img src="images/japan.jpg" alt="Japan Pavilion">
+              <div class="desc">
+                <p>Bringing together technology, people and ideas</p>
+              </div>
             </div>
           </div>
 
-          <div class="section">
-            <div class="Pavillion-Name"> Saudi Arabia</div>
-            <img src="images/saudi_arabia.jpg" alt="Saudi Arabia Pavilion">
-            <div class="desc">
-              <p>Reflection of the Kingdom’s past, present and shared future</p>
-            </div>
+          <div class="buttons">
+            <!--Next and Previous Buttons-->
+            <a class="prev nav-btn" onclick="SlideAction(-1)">&#10094;</a>
+            <a class="next nav-btn" onclick="SlideAction(1)">&#10095;</a>
           </div>
 
-          <div class="section">
-            <div class="Pavillion-Name"> Belgium</div>
-            <img src="images/belgium.jpg" alt="Belgium Pavilion">
-            <div class="desc">
-              <p>Diversity in Harmony</p>
-            </div>
+          <!--Tally Circles-->
+          <div id="circles">
+            <span class="bubble" onclick="currentImage(1)"></span>
+            <span class="bubble" onclick="currentImage(2)"></span>
+            <span class="bubble" onclick="currentImage(3)"></span>
+            <span class="bubble" onclick="currentImage(4)"></span>
+            <span class="bubble" onclick="currentImage(5)"></span>
           </div>
 
-          <div class="section">
-            <div class="Pavillion-Name"> Singapore</div>
-            <img src="images/singapore.jpg" alt="Singapore Pavilion">
-            <div class="desc">
-              <p>It is hard to tell where nature begins and architecture ends</p>
-            </div>
-          </div>
-
-          <div class="section">
-            <div class="Pavillion-Name"> Japan</div>
-            <img src="images/japan.jpg" alt="Japan Pavilion">
-            <div class="desc">
-              <p>Bringing together technology, people and ideas</p>
-            </div>
-          </div>
-
-          <!--Next and Previous Buttons-->
-          <a class="prev" onclick="SlideAction(-1)">&#10094;</a>
-          <a class="next" onclick="SlideAction(1)">&#10095;</a>
         </div>
-        <br>
-
       </div>
     </div>
 
-    <!--Tally Circles-->
-    <div id="circles">
-      <span class="bubble" onclick="currentImage(1)"></span>
-      <span class="bubble" onclick="currentImage(2)"></span>
-      <span class="bubble" onclick="currentImage(3)"></span>
-      <span class="bubble" onclick="currentImage(4)"></span>
-      <span class="bubble" onclick="currentImage(5)"></span>
-    </div>
 
     <!--Footer-->
     <div id="footer">
