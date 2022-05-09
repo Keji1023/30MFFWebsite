@@ -1,25 +1,32 @@
-var imageIndex = 1;
-showImage(imageIndex);
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const images = document.querySelector('.carousel').children;
+const totalImages = images.length;
+let index = 0;
 
-//Next and previous Buttons
-function plusImages(i) {
-  showSlides(slideIndex += i);
-}
+prev.addEventListener('click', () => {
+  nextImage('next');
+})
+next.addEventListener('click', () => {
+  nextImage('prev');
+})
 
-function showImage(i) {
-  var i;
-  var images = document.getElementsByClassName("section")
-  var bubbles = document.getElementsByClassName("bubble")
-  if (i>images.length) {imageIndex = 1}
-  if (i < 1) {imageIndex = images.length}
-  for (var i = 0; i < images.length; i++) {
-   images[i].style.display = "none";
+function nextImage(direction) {
+  if(direction == 'next') {
+    index++;  // increase by 1, Global variable
+    if(index == totalImages) {
+      index = 0;
+    }
+  } else {
+    if(index == 0) {
+      index = totalImages - 1;
+    } else {
+      index--; // Backwards by 1
+    }
   }
 
-  for (var i = 0; i < bubbles.length; i++) {
-    bubbles[i].className = bubbles[i].className.replace(" active", "")
+  for(let i = 0; i < images.length; i++) {
+    images[i].classList.remove('main1');
   }
-
-  images[imageIndex-1].style.display = "block";
-  bubbles[imageIndex-1].className += "active";
+  images[index].classList.add('main1');
 }
